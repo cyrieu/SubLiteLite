@@ -1,5 +1,8 @@
 <?php
-
+/*
+* Creates a Mongo instance if there is not one already, if there is one, return the created instance
+*
+*/
 Class MongoSingleton
 {
 	static $db = NULL;

@@ -1,10 +1,13 @@
 <?php
 
-include("login.php");
+session_destroy();
 
 if (isset($_SESSION['username'])) {
 	header("location: profile.php");
-} 
+} else {
+	include "login.php";
+
+}
 
 ?>
 
